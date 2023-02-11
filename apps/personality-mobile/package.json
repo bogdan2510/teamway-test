@@ -8,7 +8,12 @@
     "react-native": "*",
     "expo": "*",
     "react-native-svg": "*",
-    "react-native-web": "*"
+    "react-native-web": "*",
+    "@nrwl/expo": "*",
+    "@expo/metro-config": "*",
+    "react": "*",
+    "react-native-ui-lib": "*",
+    "@expo/webpack-config": "*"
   },
   "scripts": {
     "postinstall": "rm -r node_modules && cd ../../ && yarn install && npx nx sync-deps personality-mobile && npx nx ensure-symlink personality-mobile"

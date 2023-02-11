@@ -13,8 +13,11 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
+    "react-native-gesture-handler": "~2.8.0",
+    "react-native-reanimated": "~2.12.0",
     "react-native-svg": "13.4.0",
     "react-native-svg-transformer": "1.0.0",
+    "react-native-ui-lib": "^6.30.1",
     "react-native-web": "~0.18.10",
     "tslib": "^2.3.0"
   },

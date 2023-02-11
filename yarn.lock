@@ -2327,6 +2327,19 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
+"@nrwl/node@^15.6.3":
+  version "15.6.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-15.6.3.tgz#3e3160f13a19edc64fe8ab9e55485934d3c6673e"
+  integrity sha512-4J98xhOn6y5FtY2wWrisJr0UEWyAWNidQb1YDJvk98XUyMXlrBxisGFndtZHpbyZHlCt0F3LXvOszDNxBpjuWA==
+  dependencies:
+    "@nrwl/devkit" "15.6.3"
+    "@nrwl/jest" "15.6.3"
+    "@nrwl/js" "15.6.3"
+    "@nrwl/linter" "15.6.3"
+    "@nrwl/webpack" "15.6.3"
+    "@nrwl/workspace" "15.6.3"
+    tslib "^2.3.0"
+
 "@nrwl/nx-cloud@latest":
   version "15.0.3"
   resolved "https://registry.yarnpkg.com/@nrwl/nx-cloud/-/nx-cloud-15.0.3.tgz#e24428969aebafcf0989d9504d941d42d51a12db"

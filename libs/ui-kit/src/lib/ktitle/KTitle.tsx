@@ -1,16 +1,16 @@
 import React from 'react';
-import { View, Text, Colors } from 'react-native-ui-lib';
+import { View, Text, Colors, TextProps } from 'react-native-ui-lib';
 
-export interface KTitleProps {
+export type KTitleProps = TextProps & {
   title: string;
   // part of the title that will be purple
   customTitle?: string;
-}
+};
 
 export function KTitle(props: KTitleProps) {
   return (
     <View row>
-      <Text text40 color={Colors.black}>
+      <Text text40 color={Colors.black} {...props}>
         {props.title}{' '}
       </Text>
       {props.customTitle && (

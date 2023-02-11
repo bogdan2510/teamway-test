@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native-ui-lib';
+import { Text, View } from 'react-native-ui-lib';
 
 /* eslint-disable-next-line */
 export interface KSubtitleProps {
@@ -8,9 +8,11 @@ export interface KSubtitleProps {
 
 export function KSubtitle(props: KSubtitleProps) {
   return (
-    <Text text80T purple1>
-      {props.text}
-    </Text>
+    <View>
+      <Text text80T purple1>
+        {props.text}
+      </Text>
+    </View>
   );
 }
 

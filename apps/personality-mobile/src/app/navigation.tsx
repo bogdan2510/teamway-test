@@ -1,31 +1,17 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from '@teamway-test/shared-types';
-import { HomeScreen, QuizScreen } from './screens';
-import { Colors } from 'react-native-ui-lib';
+import { HomeScreen, QuizScreen, ResultsScreen } from './screens';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="HomeScreen"
-          component={HomeScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="QuizScreen"
-          component={QuizScreen}
-          options={{
-            headerTitle: '',
-            headerStyle: {
-              backgroundColor: Colors.purple70,
-            },
-            headerShadowVisible: false,
-          }}
-        />
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="QuizScreen" component={QuizScreen} />
+        <Stack.Screen name="ResultsScreen" component={ResultsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

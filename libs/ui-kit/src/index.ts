@@ -1,3 +1,5 @@
+
+export * from './lib/kdata-loader/KDataLoader';
 export * from './lib/kcontainer/KContainer';
 
 export * from './lib/ksubtitle/KSubtitle';

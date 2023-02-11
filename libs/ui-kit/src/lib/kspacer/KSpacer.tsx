@@ -7,7 +7,7 @@ export interface KSpacerProps {
   width?: number | string;
 }
 
-function KSpacer({
+export function KSpacer({
   height = Spacings.s4,
   color = 'transparent',
   width = Spacings.s4,

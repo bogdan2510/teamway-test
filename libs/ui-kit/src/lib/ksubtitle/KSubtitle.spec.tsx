@@ -5,7 +5,7 @@ import KSubtitle from './KSubtitle';
 
 describe('KSubtitle', () => {
   it('should render successfully', () => {
-    const { container } = render(< KSubtitle />);
+    const { container } = render(<KSubtitle text={'Subtitle'} />);
     expect(container).toBeTruthy();
   });
 });

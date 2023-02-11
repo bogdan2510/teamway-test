@@ -5,7 +5,9 @@ import KTitle from './KTitle';
 
 describe('KTitle', () => {
   it('should render successfully', () => {
-    const { container } = render(< KTitle />);
+    const { container } = render(
+      <KTitle title="Title" customTitle="Custom title" />
+    );
     expect(container).toBeTruthy();
   });
 });

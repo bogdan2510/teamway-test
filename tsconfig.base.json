@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@teamway-test/shared-types": ["libs/shared-types/src/index.ts"]
+      "@teamway-test/shared-types": ["libs/shared-types/src/index.ts"],
+      "@teamway-test/ui-kit": ["libs/ui-kit/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -4,22 +4,14 @@ import { Button, View, Colors } from 'react-native-ui-lib';
 import { FlatList, SafeAreaView, useWindowDimensions } from 'react-native';
 import { useQuery } from 'react-query';
 import axios from 'axios';
-import { RootStackParamProps } from '@teamway-test/shared-types';
+import {
+  Answer,
+  QuizData,
+  RootStackParamProps,
+} from '@teamway-test/shared-types';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 const apiUrl = 'https://mocki.io/v1/0ea90288-9bef-481c-9dc4-28464ff0c1a4';
-
-interface QuizData {
-  id: number;
-  question: string;
-  answers: Answer[];
-}
-
-interface Answer {
-  id: number;
-  value: string;
-  score: number;
-}
 
 const QuizScreen = ({ navigation }: RootStackParamProps<'QuizScreen'>) => {
   const { width, height } = useWindowDimensions();
